@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viral Music Generator</title>
+  <link rel="stylesheet" href="index.css" />
+  <!-- Magenta.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.23.0/es6/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.23.0/es6/music_rnn.js"></script>
+  <!-- Tone.js CDN for playback -->
+  <script src="https://cdn.jsdelivr.net/npm/tone@14.8.39/build/Tone.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <h1>Viral Music Generator</h1>
+    <p>Select a trending track to inspire the AI‑generated music.</p>
+    <select id="trendSelect"></select>
+    <button id="generateBtn" class="primary">Generate Music</button>
+    <div class="player-section hidden" id="playerSection">
+      <audio id="audioPlayer" controls></audio>
+      <button id="downloadBtn" class="secondary">Download WAV</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
